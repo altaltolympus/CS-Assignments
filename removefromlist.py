@@ -15,7 +15,7 @@ while listCounter < len(longList):
         print(f"{longList[listCounter]} was not removed from the list")
         listCounter += 1
 print(longList)
-#this bit checks if i fucked up
+#this bit checks if i messed up
 errors = 0
 for item in longList:
     if item < 0:
