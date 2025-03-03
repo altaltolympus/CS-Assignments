@@ -9,10 +9,10 @@ listCounter = 0
 # for item in longList:
 while listCounter < len(longList):
     if longList[listCounter] < 0:
-        print(f"{longList[listCounter]} was marked to be removed from the list")
+        # print(f"{longList[listCounter]} was marked to be removed from the list")
         longList.remove(longList[listCounter])
     else:
-        print(f"{longList[listCounter]} was not removed from the list")
+        # print(f"{longList[listCounter]} was not removed from the list")
         listCounter += 1
 print(longList)
 #this bit checks if i messed up
