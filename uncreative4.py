@@ -5,4 +5,7 @@ print(csvList)
 integers = [int(item) for item in csvList]
 print(integers)
 integers.sort()
-print(integers)
+etmt = open("sortedrepetition.csv", "w")
+randomString = ",".join(str(e) for e in integers)
+etmt.write(randomString)
+etmt.close()
