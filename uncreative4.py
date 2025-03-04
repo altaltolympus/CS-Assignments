@@ -1,2 +1,8 @@
 randomList = open("repeatingmyself.csv", "r")
-print(randomList.read())
+csvString = randomList.read()
+csvList = csvString.split(",")
+print(csvList)
+integers = [int(item) for item in csvList]
+print(integers)
+integers.sort()
+print(integers)
