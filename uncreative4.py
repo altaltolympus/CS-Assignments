@@ -1,0 +1,11 @@
+randomList = open("repeatingmyself.csv", "r")
+csvString = randomList.read()
+csvList = csvString.split(",")
+print(csvList)
+integers = [int(item) for item in csvList]
+print(integers)
+integers.sort()
+etmt = open("sortedrepetition.csv", "w")
+randomString = ",".join(str(e) for e in integers)
+etmt.write(randomString)
+etmt.close()
