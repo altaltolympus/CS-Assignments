@@ -3,9 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALT home</title>
+    <title>ALT Hub</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <div class="header top">
+        <h1> ALT Hub</h1>
+    </div>
+    <div class="content">
+        <article id="1"> <!-- These ID numbers serve no purpose and are just here to help me tell which ALT is which -->
+            <div class="header">
+                <h2><a href="alt1.html">ALT 1</a></h2>
+            </div>
+            <p>
+                I like Dungeons and Dragons, but I don't always remember all the classes. 
+                To help with this, I created a webpage with the names of every class, as well as a short description.
+            </p>
+            <img src="wireframes/alt1.jpg" alt="A wireframe for ALT1">
+            <p>
+                The plan was to present the names of each class in boxes laid out in a grid, and for a description to appear when the user clicked on the name. 
+                This description would disappear when the user clicked again.
+                I decided to use flexbox in CSS to lay out the grid rather than CSS grid itself, because this would allow me to effectively resize items and add new ones like I wanted to.
+            </p>
+            <p>
+                I started by finding short descriptions of each class on the official Dungeons & Dragons website and pasting them into a file. 
+                I then used flexbox as I had intended to create two columns on the webpage and laid out the boxes with the names of each class in those columns.
+            </p>
+            <p>
+                I initially planned to add the descriptions using JavaScript, but encountered the problem of not knowing how to write any JavaScript at all.
+                I had planned to solve this problem by learning enough JavaScript to do what was needed, but this ended up taking too long to complete within the allocated timeframe.
+                Therefore, I changed my plan. Rather than clicking on the classes to reveal the description, I decided to show them after hovering over it instead.
+                This can be done using CSS without any JavaScript, and was therefore perfectly possible for me to accomplish.
+            </p>
+            <p>
+                With this challenge overcome, I took colour and design inspiration from the Dungeons & Dragons website and added in the descriptions until finally the website was functionong as intended.
+                If I were to improve this project, I would try to revisit the original plan to use JavaScript, and add more mechanical details of each class.
+                However, for the moment, the page will do fine as it is.
+            </p>
+        </article>
+        <article id="2">
+
+        </article>
+        <article id="4">
+
+        </article>
+    </div>
 </body>
 </html>

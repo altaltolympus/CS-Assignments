@@ -1,0 +1,53 @@
+:root {
+    --black: #090809;
+    --grey: #26282a;
+    --fancy-fonts: "Garamond", serif;
+    --non-fancy-fonts: "Helvetica", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--grey);
+}
+
+.header {
+    background-color: #090809;
+    margin: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top {
+    padding: 2vmin;
+}
+
+h1 {
+    color: white;
+    font-size: 8vmin;
+}
+
+.content {
+    margin: 10vmin
+}
+
+article {
+    background-color: var(--black);
+    color: white;
+    padding: 2vmin;
+    margin: 5vmin;
+}
+
+h2, a {
+    font-size: 5vmin;
+    color: white;
+}
+
+p {
+    font-size: 3vmin;
+}
+
+img {
+    width: 90%;
+}
