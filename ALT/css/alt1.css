@@ -1,0 +1,76 @@
+:root {
+    --black: #090809;
+    --grey: #26282a;
+    --red: #e40712;
+    --fancy-fonts: "Garamond", serif;
+    --non-fancy-fonts: "Helvetica", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--grey);
+}
+
+.header {
+    background-color: #090809;
+    margin: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top {
+    padding: 2vmin;
+}
+
+.header > h1 {
+    font-size: 8vmin;
+    color: var(--red);
+    font-family: var(--fancy-fonts)
+}
+
+article {
+    margin-right: 25vmin;
+    margin-left: 25vmin;
+    margin-top: 10vmin;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.column {
+    width: 40%;
+}
+
+.class {
+    background-color: var(--black);
+    border-radius: 2vmin;
+    color: white;
+    padding: 3vmin;
+    font-family: var(--non-fancy-fonts);
+    margin-top: 2vmin;
+    margin-bottom: 2vmin;
+}
+
+h3 {
+    font-size: 4vmin;
+}
+
+.description {
+    /* height: 0;
+    width: 0; */
+    font-size:0;
+    color: transparent;
+    transition: 200ms ease-in-out;
+}
+
+.class:hover {
+    box-shadow: .5vmin .5vmin .5vmin white;
+}
+
+.class:hover > .description {
+    font-size: 3vmin;
+    color: white;
+    /* font-family: var(--non-fancy-fonts); */
+}
