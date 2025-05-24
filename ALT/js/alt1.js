@@ -1,3 +1,5 @@
+// This file is a relic of the past. It exists because I just don't want to delete it. It is not actually used in any capacity by any of the ALT projects.
+
 const barbarian = {
     shown:false,
     description:"Barbarians are mighty warriors who are powered by primal forces of the multiverse that manifest as a Rage. More than a mere emotion—and not limited to anger—this Rage is an incarnation of a predator’s ferocity, a storm’s fury, and a sea’s turmoil."
