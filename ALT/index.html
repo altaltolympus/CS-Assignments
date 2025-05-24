@@ -51,15 +51,21 @@
                 In an effort to resolve this, I looked online for where the Department of Education had defined what this task was supposed to be. 
                 When I eventually found it, I discovered that what I already knew about the assignment was all there was to know about it.
                 Upon realising that I was going to have to figure this out myself, I decided to let chance decide and visited the CSO website.
-                After looking through their lists of gathered statistics, I decided to analyse metered electricity generation from October to December of 2023.
+                After looking through their lists of gathered statistics, I decided to analyse the percentage of renewable energy by time of day from 2020 to 2023.
             </p>
             <p>
-                I initially hypothesised that energy generation would increase over time from October to December. 
-                I thought this because as the time of year moves further toward and into winter, days get gradually colder and shorter, and therefore more buildings would need artificial heating and lighting.
+                I initially hypothesised that renewable energy would have a higher share of energy generation during the day than in the night for two reasons. 
+                The first is that the sun only shines during the day, meaning that solar power is ineffective at night.
+                The second is because the current renewable energy generation capacity is limited, and energy is needed at night for lighting and heating.
+                Therefore, non-renewable energy would take on a greater share of power at night because the weakened renewables would leave more energy demands unmet.
             </p>
             <p>
                 I began working on the project by installing the Python module matplotlib onto my computer. 
                 I chose matplotlib because I already knew how to use it, and I knew its data visualisation tools would be useful for the project at hand.
+            </p>
+            <p>
+                The data I downloaded from the CSO was split into average values for renewable percentage at half-hour intervals through the day for each month between January 2020 and December 2023.
+                While these distinctions are interesting, I only wanted to know about the average for each time of the day in general, so I wrote an algorithm to sort through the data from the CSO's file and added every data point from each time of day to their own list.
             </p>
         </article>
         <article id="4">
