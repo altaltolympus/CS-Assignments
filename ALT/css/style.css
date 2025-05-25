@@ -39,13 +39,17 @@ article {
     margin: 5vmin;
 }
 
-h2, a {
+h2 {
     font-size: 5vmin;
     color: white;
 }
 
 p {
     font-size: 3vmin;
+}
+
+a {
+    color: white;
 }
 
 img {

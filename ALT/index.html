@@ -56,7 +56,7 @@
             <p>
                 I initially hypothesised that renewable energy would have a higher share of energy generation during the day than in the night for two reasons. 
                 The first is that the sun only shines during the day, meaning that solar power is ineffective at night.
-                The second is because the current renewable energy generation capacity is limited, and energy is needed at night for lighting and heating.
+                The second is because the current renewable energy generation capacity is limited, and more energy is needed at night for lighting and heating.
                 Therefore, non-renewable energy would take on a greater share of power at night because the weakened renewables would leave more energy demands unmet.
             </p>
             <p>
@@ -66,6 +66,16 @@
             <p>
                 The data I downloaded from the CSO was split into average values for renewable percentage at half-hour intervals through the day for each month between January 2020 and December 2023.
                 While these distinctions are interesting, I only wanted to know about the average for each time of the day in general, so I wrote an algorithm to sort through the data from the CSO's file and added every data point from each time of day to their own list.
+                I then took the lists for each time of day, found the average of each value inside them and used matplotlib to visualise this data in a line graph, 
+                with the x-axis representing the time of day and the y-axis representing the percentage of energy generation being covered by renewable at that time.
+            </p>
+            <p>
+                From this graph, found <a href="alt2.html">here</a>, I found that my hypothesis was partially incorrect: renewable energy's share of total energy generation starts off higher at midnight with about 43%, 
+                then after 3:30am falls slowly to about 36% until around 8:30am, rises again to 42% at about 2pm, before falling back down to 37% at 6:30 am and finally rising to 43% again for the next day. 
+                I would guess that my hypothesis was wrong because I didn't account for people generally going to sleep at night, and therefore not needing as much artificial heat or light.
+            </p>
+            <p>
+                If I were to iterate on this project, I would make more use of all the data the CSO provided to provide more detailed analysis, such as renewable energy generation by month as well as time of day.
             </p>
         </article>
         <article id="4">

@@ -88,5 +88,9 @@ for item in timeValues: # This loop gets the average for every time of day and a
 #     counter += 1
 
 print(f"averageEnergyValues = {averageEnergyValues}")
-
+plot.plot(timeBrackets, averageEnergyValues)
+plot.title("Renewable Energy Over the Day from 2020 to 2023")
+plot.xlabel("Time")
+plot.ylabel("Percentage of Energy generation covered by renewables")
+plot.show()
 # fig, ax = plot.subplots(figsize = (5,4), layout="constrained")

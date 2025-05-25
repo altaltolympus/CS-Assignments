@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    background-color: #26282a;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.main  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #4c5054;
+    padding: 5vmin;
+}
+
+img {
+    margin: 10vmin;
+}
+
+p {
+    color:white;
+    font-family: "Garamond", serif;
+    font-size: 1.5vmin;
+}
+
+a {
+    color:white;
+}
+
+a:visited {
+    color:white;
+}
