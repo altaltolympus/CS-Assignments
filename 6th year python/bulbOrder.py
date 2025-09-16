@@ -21,7 +21,7 @@ orderCost = bagCost * bags
 if bags > 99:
     discount = 10
 elif bags > 24:
-    dscount = 5
+    discount = 5
 if gold:
     discount += 3.5
 orderCost -= orderCost * discount
