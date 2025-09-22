@@ -1,16 +1,30 @@
-* {
-  color: white;
-  background-color: #16161d;
-}
 body,
 html {
-  height: 100%;
-  margin: 0in;
+    height: 100%;
+    margin: 0in;
+    padding: 3vmin;
+    color: white;
+    background-color: #16161d;
 }
 .text {
-  background-color: transparent;
-  margin: 0cm;
+    background-color: transparent;
+    margin: 0cm;
 }
 #innocuous {
-  font-size: 4min;
+    font-size: 4min;
+}
+.header {
+    margin: 3vmin;
+    margin-top: 0vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hijink {
+    border-top: white;
+    border-bottom: white;
+    border-left: transparent;
+    border-right: transparent;
+    border-style: solid;
+    padding: 2vmax;
 }

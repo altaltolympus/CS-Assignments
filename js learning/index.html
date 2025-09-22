@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Learnings</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1 class="header text">JAVASCRIPT !!! :D</h1>
-    <p id="innocuous" class="text">wow this is very innocent looking text i'm sure it doesn't do anything</p>
-    <button onclick="crazyRight()">cmon press me what's the worst that can happen</button>
-    <script src="script.js"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Learnings</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="header">
+            <h1 class="text">JAVASCRIPT !!! :D</h1>
+        </div>
+        <div class="hijink">
+            <p id="innocuous" class="text">wow this is very innocent looking text i'm sure it doesn't do anything</p>
+            <button id="colourChange" onclick="crazyRight()">cmon press me what's the worst that can happen</button>
+        </div>
+        <div class="hijink" id="driversLicense">
+            <h3 class="text">Driver's License</h3>
+            <p class="text">Enter your age:</p>
+            <input type="number" id="age" value="0" />
+            <p class="text">Do you have a provisional license?</p>
+            <button onclick="yesClick()">Yea</button>
+            <button onclick="noClick()">Nay</button>
+        </div>
+        <div class="hijink" id="arguments">
+            <h3 class="text">Give me thy rectangle</h3>
+            <input type="number" id="length" placeholder="Length" />
+            <input type="number" id="width" placeholder="Width" />
+            <button onclick="rectangle()">Work the calculations</button>
+            <p class="text" id="rectOutput">I have received no rectangle.</p>
+        </div>
+        <script src="script.js"></script>
+        <script src="hijinks/driversLicense.js"></script>
+        <script src="hijinks/arguing.js"></script>
+    </body>
 </html>
