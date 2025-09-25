@@ -9,9 +9,10 @@ html {
 .text {
     background-color: transparent;
     margin: 0cm;
+    font-family: "Consolas", Courier, monospace;
 }
 #innocuous {
-    font-size: 4min;
+    font-size: 3vmin;
 }
 .header {
     margin: 3vmin;
@@ -21,10 +22,9 @@ html {
     justify-content: center;
 }
 .hijink {
+    border-color: transparent;
     border-top: white;
-    border-bottom: white;
-    border-left: transparent;
-    border-right: transparent;
     border-style: solid;
     padding: 2vmax;
+    border-width: 1px;
 }
