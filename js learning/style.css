@@ -28,3 +28,6 @@ html {
     padding: 2vmax;
     border-width: 1px;
 }
+p {
+    font-size: 2vmin;
+}
