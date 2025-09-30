@@ -12,7 +12,7 @@ html {
     font-family: "Consolas", Courier, monospace;
 }
 #innocuous {
-    font-size: 3vmin;
+    font-size: 2vmin;
 }
 .header {
     margin: 3vmin;
@@ -30,4 +30,25 @@ html {
 }
 p {
     font-size: 2vmin;
+}
+h1 {
+    font-size: 5vmin;
+    background: linear-gradient(135deg, #cff, #cfc, #ffc, #fcc, #fcf, #ccf, #cff);
+    background-clip: text;
+    color: transparent;
+    background-size: 200%;
+    animation: gradientPan 120s linear infinite;
+}
+@keyframes gradientPan {
+    from {
+        background-position: 0% center;
+    }
+    to {
+        background-position: -200% center;
+    }
+}
+button {
+    font-family: "Consolas", Courier, monospace;
+    background-color: white;
+    font-size: 1.5vmin;
 }

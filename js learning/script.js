@@ -11,8 +11,9 @@ function crazyRight() {
     innocuous.innerText = "oo wee oo";
     innocuous.style.fontFamily = "monospace";
     window.alert("you have 37 diseases");
-    colourButton.style.backgroundColor = "#66b9fdff";
+    colourButton.style.backgroundColor = "#00ddc0";
     colourButton.innerText = "you have been bamboozled";
 }
 
 let array = [];
+// wow so useful
