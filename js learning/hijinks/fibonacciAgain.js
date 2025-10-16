@@ -14,10 +14,14 @@ let startButton = document.getElementById("fibStart");
 // #region start button updater
 iterationInput.addEventListener("change", () => {
     iterationLimit = iterationInput.value;
+    if (iterationLimit == "" || iterationLimit == 0) {
+        iterationLimit = 32678;
+    }
     console.debug(`Iteration limit changed to ${iterationLimit}`);
-    if (iterations >= iterationLimit) blockStart();
-    else enableStart();
-})
+    if (iterations >= iterationLimit && !active) {
+        blockStart();
+    } else enableStart();
+});
 
 // #region berateUser()
 function berateUser() {
@@ -26,11 +30,10 @@ function berateUser() {
         iterationLimit = 32678;
     }
     if (isNaN(parseInt(iterationLimit))) {
-            window.alert("fibonacci is turning in his grave right now");
-            console.warn(`things were going fine until YOU decided to ruin them by inputting "${iterationLimit}" or some shit`);
-            return true;
-        }
-    else {
+        window.alert("fibonacci is turning in his grave right now");
+        console.warn(`things were going fine until YOU decided to ruin them by inputting "${iterationLimit}" or some shit`);
+        return true;
+    } else {
         return false;
     }
 }
@@ -56,6 +59,7 @@ function fibReset() {
     output.innerText = "";
     fibCounter.innerText = `Iterations: ${iterations}`;
     active = false;
+    enableStart();
 }
 
 // #region fibLoop()
@@ -72,14 +76,13 @@ function fibonacciStart() {
     if (berateUser(iterationLimit)) return;
     if (active) {
         window.alert("Please wait for the current loop to finish!");
-        console.log("Start attempted while loop active")
+        console.log("Start attempted while loop active");
         return;
     }
     if (iterations >= iterationLimit) {
         window.alert("Iteration limit has been reached, either increase limit in the text box or reset");
         return;
-    }
-    else {
+    } else {
         active = true;
         blockStart();
         fibLoop();
@@ -97,5 +100,5 @@ function blockStart() {
 function enableStart() {
     startButton.style.backgroundColor = "#eee";
     startButton.style.color = "#111";
-    startButton.onclick = fibonacciStart();
+    startButton.onclick = fibonacciStart;
 }
