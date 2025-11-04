@@ -1,0 +1,22 @@
+* {
+    font-family: "consolas", monospace;
+}
+html,
+body {
+    margin: 0rem;
+    padding: 0ch;
+}
+
+.top {
+    padding: 0.5vmin;
+    background-color: #ccf;
+    font-size: 1.5vmin;
+}
+
+.pageheader {
+    font-size: 3vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
