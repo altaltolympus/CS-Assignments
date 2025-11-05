@@ -14,7 +14,7 @@ body {
 }
 
 .pageheader {
-    font-size: 3vmax;
+    font-size: 3vmin;
     display: flex;
     justify-content: center;
     align-items: center;

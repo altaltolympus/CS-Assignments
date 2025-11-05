@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Consolas;
+    src: url(consolas.ttf);
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -9,5 +14,5 @@ body {
     margin-top: 15%;
     background-color: #b0b0e8;
     padding: 4vmin;
-    font-family: "Garamond", serif
+    font-family: "", serif
 }
