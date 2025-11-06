@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Consolas;
+    src: url(../consolas.ttf)
+}
+
 input,
 button {
     font-size: 1.5vmin;

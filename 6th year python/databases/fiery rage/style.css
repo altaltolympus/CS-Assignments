@@ -1,5 +1,10 @@
+@font-face {
+    font-family: Consolas;
+    src: url(../../../consolas.ttf)
+}
+
 * {
-    font-family: "consolas", monospace;
+    font-family: "Consolas", monospace;
 }
 html,
 body {
@@ -19,4 +24,6 @@ body {
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    background-color: #558
 }
+
