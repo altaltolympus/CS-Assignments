@@ -24,25 +24,45 @@
         </div>
         <div class="hijink" id="arguments">
             <h3 class="text">Give me thy rectangle</h3>
-            <input type="number" id="length" placeholder="Length" />
-            <input type="number" id="width" placeholder="Width" />
-            <button onclick="rectangle()">Work the calculations</button>
+            <div class="inputrow">
+                <input type="number" id="length" placeholder="Length" />
+                <input type="number" id="width" placeholder="Width" />
+                <button onclick="rectangle()">Work the calculations</button>
+            </div>
             <p class="text" id="rectOutput">I have received no rectangle.</p>
         </div>
         <div class="hijink" id="fibonacci">
             <h3 class="text">Fibonacci</h3>
-            <input type="number" id="fibLoop" placeholder="Number of iterations" />
-            <button id="fibStart" onclick="fibonacciStart()">ACTIVATE!!!</button>
-            <button onclick="fibReset()">Reset.</button>
+            <div class="inputrow">
+                <input type="number" id="fibLoop" placeholder="Number of iterations" />
+                <button id="fibStart" onclick="fibonacciStart()">ACTIVATE!!!</button>
+                <button onclick="fibReset()">Reset.</button>
+            </div>
             <p class="text"><span id="fibOutput"></span> <span id="fibIterations" style="color: #aaa"></span></p>
         </div>
         <div class="hijink" id="dice">
             <h3 class="text">Dice Roller</h3>
+            <div class="inputrow">
+                <input type="number" name="diceAmount" id="diceAmount" min="1" value="1"/>
+                <select name="dieSelector" id="dieSelector" placeholder="Die size:">
+                    <option id="d4" value="4">d4</option>
+                    <option id="d6" value="6">d6</option>
+                    <option id="d8" value="8">d8</option>
+                    <option id="d10" value="10">d10</option>
+                    <option id="d12" value="12">d12</option>
+                    <option id="d20" value="20">d20</option>
+                    <option id="d100" value="100">d100</option>
+                </select>
+                <button id="diceStart" onclick="roll()">Activate!!</button>
+            </div>
+            <p class="text" id="diceOutput"></p>
         </div>
+            
         <script src="script.js"></script>
         <script src="hijinks/driversLicense.js"></script>
         <script src="hijinks/arguing.js"></script>
         <script src="hijinks/objectification.js"></script>
         <script src="hijinks/fibonacciAgain.js"></script>
+        <script src="hijinks/dice.js"></script>
     </body>
 </html>

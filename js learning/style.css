@@ -70,4 +70,18 @@ button {
 button:hover {
     border-color: #69f;
     background-color: #fff;
+    box-shadow:  0 0 5px #69f;
+}
+
+.inputrow {
+    display:flex;
+    flex-direction: row;
+}
+
+.inputrow > * {
+    margin-right: 1%;
+}
+
+.inputrow > button {
+    height: 100%;
 }
