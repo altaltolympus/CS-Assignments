@@ -56,6 +56,7 @@ def test():
     # print(diceRollLoop(2, 6, 4)) # 3rd-level scorching ray   
     # print(probabilityCheck(2, 4, 100)) # greatclub attack
     # print(f"\n{runEverything(15, 8, 1000000)}") # finger of death
+    # output = runEverything(15, 8, 1000000)
     output = runEverything(2, 6, 1000000)
     print(output)
     # scatter(output[0], output[1])
