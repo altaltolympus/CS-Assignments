@@ -1,0 +1,43 @@
+@font-face {
+    font-family: Consolas;
+    src: url(../consolas.ttf);
+}
+
+body {
+    margin: 0;
+    background-color: #16161d;
+}
+
+.text {
+    font-family: "Consolas", monospace;
+}
+
+.top-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+    background: black;
+    height: 100%;
+}
+
+.subheader {
+    font-size: 35px;
+}
+
+.gradBackground {
+    background: linear-gradient(90deg, hsl(0, 70%, 80%), hsl(60, 70%, 80%), hsl(120, 70%, 80%), hsl(180, 70%, 80%), hsl(240, 70%, 80%), hsl(300, 70%, 80%), hsl(360, 70%, 80%));
+    color: transparent;
+    background-clip: text;
+    background-size: 200%;
+    animation: gradientPan 60s linear infinite;
+}
+@keyframes gradientPan {
+    from {
+        background-position: 0% center;
+    }
+    to {
+        background-position: -200% center;
+    }
+}
