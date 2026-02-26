@@ -17,12 +17,17 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-size: 75px;
     background: black;
     height: 100%;
 }
 
 .subheader {
+    text-decoration: bold;
+}
+
+h2 {
     font-size: 35px;
 }
 
@@ -40,4 +45,17 @@ body {
     to {
         background-position: -200% center;
     }
+}
+
+.main-para {
+    color: #ddd;
+    margin: 10%;
+}
+
+h3 {
+    font-size: 7vmin;
+}
+
+h4 {
+    font-size: 5vmin;
 }
