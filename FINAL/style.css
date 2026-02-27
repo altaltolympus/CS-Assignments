@@ -25,10 +25,15 @@ body {
 
 .subheader {
     text-decoration: bold;
+    text-align: center;
 }
 
 h2 {
     font-size: 35px;
+}
+
+p {
+    font-size: 2.5vmin;
 }
 
 .gradBackground {

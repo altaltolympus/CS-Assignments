@@ -22,12 +22,6 @@ with open("soilmoisture.csv", "a", newline="") as file:
         inputLine = inputLine.split(": ")
         inputList.append(inputLine[1])
         
-
-        # for value in matchInputs:
-        #     if inputLine.__contains__(value):
-        #         print(matchInputs[value])
-        #         inputList.append(matchInputs[value])
-        #         break
         if len(inputList) == 3:
             print(f"Full list: {inputList}")
             spreadsheet = writer(file)
