@@ -54,7 +54,8 @@ p {
 
 .main-para {
     color: #ddd;
-    margin: 10%;
+    margin-left: max(20%, 30px);
+    margin-right: max(20%, 30px);
 }
 
 h3 {
