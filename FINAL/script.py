@@ -14,8 +14,9 @@ matchInputs = {
 }
 inputList = []
 
-with open("soilmoisture.csv", "a", newline="") as file:
-    while True:
+
+while True:
+    with open("soilmoisture.csv", "a", newline="") as file:
         inputLine = str(s.readline())[2:-6].rstrip()
         print(inputLine)
 
