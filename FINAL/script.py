@@ -6,13 +6,12 @@ s.port = "COM3"
 s.open()
 file = open("soilmoisture.csv", "w", newline="")
 spreadsheet = writer(file)
-spreadsheet.writerow(["Iterations", "Soil humidity", "Water level"])
-matchInputs = {
-    "Iterations": 0,
-    "Soil humidity": 1,
-    "Water level": 2
-}
+spreadsheet.writerow(["Iterations", "Soil humidity", "Water level", "Flood status"])
 inputList = []
+DANGER_HUMID = 100
+DANGER_WATER = 100
+floodLevel = 0
+FLOOD_LEVELS = ("None", "Imminent", "In progress")
 
 
 while True:
@@ -22,8 +21,18 @@ while True:
 
         inputLine = inputLine.split(": ")
         inputList.append(inputLine[1])
+
+        if inputLine[0].lower() == "soil humidity":
+            if int(inputLine[1]) >= DANGER_HUMID:
+                floodLevel += 1
+        if inputLine[0].lower() == "water level":
+            if int(inputLine[1]) >= DANGER_WATER:
+                floodLevel += 1
+
+        inputList.append(FLOOD_LEVELS[floodLevel])
         
-        if len(inputList) == 3:
+        
+        if len(inputList) == 4:
             print(f"Full list: {inputList}")
             spreadsheet = writer(file)
             spreadsheet.writerow(inputList)
