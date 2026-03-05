@@ -24,11 +24,6 @@ body {
     padding: 2%;
 }
 
-.subheader {
-    text-decoration: bold;
-    text-align: center;
-}
-
 h2 {
     font-size: 35px;
 }
@@ -51,6 +46,11 @@ p {
     to {
         background-position: -200% center;
     }
+}
+
+.subheader {
+    text-decoration: bold;
+    text-align: center;
 }
 
 .main-para {
