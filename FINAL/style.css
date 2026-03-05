@@ -82,3 +82,6 @@ hr {
     border: 0px;
     margin: 5%;
 }
+b {
+    text-decoration: underline;
+}
