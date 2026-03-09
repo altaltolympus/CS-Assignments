@@ -35,7 +35,6 @@
         <hr />
         <div class="main-para text" id="investigation">
             <h3 class="subheader">Investigation</h3>
-            <p></p>
         </div>
         <hr />
         <div class="main-para text" id="planning-and-design">
@@ -61,15 +60,20 @@
                 I then decided to store the data sent from the micro:bit into a .csv file, rather than an online database service such as ThingSpeak; firstly because I have more experience with using Python's <i>serial</i> module than with
                 such services, but also to account for the poor reliability of internet connection in my school building.
             </p>
-            <p></p>
+            <br />
+            <p>
+                This project would be useful to a variety of interests. Among these are people living in flood-prone areas, looking to know when a flood is imminent in order to adequately prepare; this is where features like the alarm come
+                in handy. As well as this, there are those who would study the weather in a given area and would find records of the data I am storing useful to that end. In this case, the status bars will be invaluable, allowing the user
+                to see the state of the area with only a passing glance.
+            </p>
         </div>
         <hr />
         <div class="main-para text" id="creation">
             <h3 class="subheader">Creation</h3>
-            <h4 class="subheader">Progress Log:</h4>
+            <h4 class="subheader">Progress Log</h4>
             <p><b>Week 1.</b> I began brainstorming different project ideas and deciding which one would be the best fit.</p>
             <p><b>Week 2.</b> I decided on the topic of the project and assembled materials and equipment that I would need to complete it.</p>
-            <p><b>Week 3.</b> I began to work on the embedded system using the MakeCode micro:bit simulator. I also wrote a program to fulfil the basic function of recieving the data transmitted from the micro:bit.</p>
+            <p><b>Week 3.</b> I began to work on the embedded system using the MakeCode micro:bit simulator. I also wrote a program to fulfil the basic function of receiving the data transmitted from the micro:bit.</p>
             <p><b>Week 4.</b> I created the status bars, which would display the soil humidity and water level detected by the sensors.</p>
             <p><b>Week 5.</b> I tested the connection between micro:bit and computer, and added the alarm function.</p>
             <p><b>Week 6.</b> I made the flood simulation and corrected my erroneous assumptions regarding the sensors, which had thus far been causing problems.</p>
@@ -81,9 +85,15 @@
             <h4 class="subheader">Problems</h4>
             <p>
                 One of the problems I encountered along the way was that, when I connected the water level sensor to the micro:bit, it always filled a part of the status bar I was using to monitor the readings and caused a line to appear
-                down the middle of the micro:bit's screen. This was a problem, not only because I did not expect this and therefore was not sure if this was affecting the sensor's readings that were being collected and stored, but also
-                because being able to clearly read the screen was important for me to easily make sure the readings from the sensor were working, and the inaccurate bar and vertical line were making this impossible. In an effort to fix
-                this, I rearranged
+                down the middle of the micro:bit's screen.
+            </p>
+            <p>
+                This was a problem, not only because I did not expect this and therefore was not sure if this was affecting the sensor's readings that were being collected and stored, but also because being able to clearly read the screen
+                was important for me to easily make sure the readings from the sensor were working, and the inaccurate bar and vertical line were making this impossible.
+            </p>
+            <p>
+                In an effort to fix this, I examined the wiring connections of the sensor until I noticed that the end connected to the micro:bit was larger than that of the other sensor. Experimentally, I reversed the connection so each
+                end of the wire was where the other one had been, and after doing this the sensor worked as expected, showing the proper value of 0 when not in water and without the vertical line that interfered with my readings.
             </p>
         </div>
         <hr />
@@ -93,12 +103,37 @@
         <hr />
         <div class="main-para text">
             <h3 class="subheader">References & Word Count</h3>
-            <table class="text">
+            <table class="text word-count">
                 <tr>
                     <th>Title</th>
                     <th>Word count</th>
                 </tr>
+                <tr>
+                    <td>Meeting the Brief</td>
+                    <th id="brief-words" class="subtotal"></th>
+                </tr>
+                <tr>
+                    <td>Investigation</td>
+                    <th id="investigation-words" class="subtotal"></th>
+                </tr>
+                <tr>
+                    <td>Planning and Design</td>
+                    <th id="planning-words" class="subtotal"></th>
+                </tr>
+                <tr>
+                    <td>Creation</td>
+                    <th id="creation-words" class="subtotal"></th>
+                </tr>
+                <tr>
+                    <td>Evaluation</td>
+                    <th id="evaluation-words" class="subtotal"></th>
+                </tr>
+                <tr>
+                    <th>Total</th>
+                    <th id="total-words"></th>
+                </tr>
             </table>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>
