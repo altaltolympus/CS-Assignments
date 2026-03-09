@@ -61,6 +61,7 @@
                 I then decided to store the data sent from the micro:bit into a .csv file, rather than an online database service such as ThingSpeak; firstly because I have more experience with using Python's <i>serial</i> module than with
                 such services, but also to account for the poor reliability of internet connection in my school building.
             </p>
+            <p></p>
         </div>
         <hr />
         <div class="main-para text" id="creation">
@@ -72,6 +73,18 @@
             <p><b>Week 4.</b> I created the status bars, which would display the soil humidity and water level detected by the sensors.</p>
             <p><b>Week 5.</b> I tested the connection between micro:bit and computer, and added the alarm function.</p>
             <p><b>Week 6.</b> I made the flood simulation and corrected my erroneous assumptions regarding the sensors, which had thus far been causing problems.</p>
+            <h4 class="subheader">Testing</h4>
+            <p>
+                I carried out testing on the embedded system, data collection system and model each separately before they were ready to be combined. I carried out unit testing as I went, testing the embedded system using the MakeCode
+                micro:bit simulator, and testing the data collection and model in the command line.
+            </p>
+            <h4 class="subheader">Problems</h4>
+            <p>
+                One of the problems I encountered along the way was that, when I connected the water level sensor to the micro:bit, it always filled a part of the status bar I was using to monitor the readings and caused a line to appear
+                down the middle of the micro:bit's screen. This was a problem, not only because I did not expect this and therefore was not sure if this was affecting the sensor's readings that were being collected and stored, but also
+                because being able to clearly read the screen was important for me to easily make sure the readings from the sensor were working, and the inaccurate bar and vertical line were making this impossible. In an effort to fix
+                this, I rearranged
+            </p>
         </div>
         <hr />
         <div class="main-para text" id="evaluation">

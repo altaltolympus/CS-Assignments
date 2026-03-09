@@ -18,7 +18,6 @@ while True:
     with open("soilmoisture.csv", "a", newline="") as file:
         inputLine = str(s.readline())[2:-6].rstrip()
         print(inputLine)
-        if inputLine.lower().__contains__("floo"): continue
 
         inputLine = inputLine.split(": ")
         inputList.append(inputLine[1])
