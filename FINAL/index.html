@@ -11,6 +11,30 @@
             <h1 class="top-header gradBackground">Computer Science Final Project</h1>
             <h2 class="subheader gradBackground">Exam Number: 337592</h2>
         </div>
+        <div class="main-para text">
+            <h3 class="subheader">Table of contents</h3>
+            <ul>
+                <li>
+                    <div class="flex"><a href="#meeting-the-brief">Meeting The Brief</a></div>
+                </li>
+                <li>
+                    <div class="flex"><a href="#investigation">Investigation</a></div>
+                </li>
+                <li>
+                    <div class="flex"><a href="#planning-and-design">Planning And Design</a></div>
+                </li>
+                <li>
+                    <div class="flex"><a href="#creation">Creation</a></div>
+                </li>
+                <li>
+                    <div class="flex"><a href="#evaluation">Evaluation</a></div>
+                </li>
+                <li>
+                    <div class="flex"><a href="#references">References & Word Count</a></div>
+                </li>
+            </ul>
+        </div>
+        <hr />
         <div class="main-para text" id="meeting-the-brief">
             <h3 class="subheader">Meeting The Brief</h3>
             <h4>BR1: Embedded System Design</h4>
@@ -39,6 +63,7 @@
         <hr />
         <div class="main-para text" id="planning-and-design">
             <h3 class="subheader">Planning & Design</h3>
+            <h4 class="subheader">Project Options</h4>
             <p>As I started this project, there were multiple directions I could have taken that would have satisfied the brief. However, I eventually chose the project that I did for a number of reasons.</p>
             <p>
                 I could have made a wildfire early-warning system based on a temperature and atmospheric humidity sensor, a popular idea in my class; however, I felt it would be more appropriate to work with flooding, since floods vastly
@@ -52,6 +77,12 @@
                 With all this in mind, I decided I would make the flood warning system and display the data from it in two bars on the micro:bit's screen (one for soil humidity and one for water level), which would extend from the left to
                 the right of the screen as the corresponding variables grew higher, and retract as these decreased.
             </p>
+            <h4 class="subheader">Technologies And Software Used</h4>
+            <p>
+                The sensors I decided to use, and therefore the variables I would be measuring, were water level and soil humidity. I chose these for a number of reasons. Firstly, these metrics strongly correlate with rainfall and other
+                things which cause flooding. Secondly, sensors for these values were easily available to me. Thirdly, it would be much more practical to test these under varied conditions than other sensors which could also have been used,
+                as the conditions these detect can easily be changed artificially.
+            </p>
             <p>
                 I did this as an alternative to relying on the micro:bit's inbuilt text display function, which I felt was not only too slow to provide information to keep up with the rate at which the environment changed, but would stop
                 everything else from running while it was working, including time-sensitive things like the alarm.
@@ -60,13 +91,16 @@
                 I then decided to store the data sent from the micro:bit into a .csv file, rather than an online database service such as ThingSpeak; firstly because I have more experience with using Python's <i>serial</i> module than with
                 such services, but also to account for the poor reliability of internet connection in my school building.
             </p>
+            <p>In the making of the embedded system and model, I used Thonny and Microsoft MakeCode for micro:bit as IDEs. When I was reporting on the project, I used Notepad + + to write the HTML and CSS for this page.</p>
             <br />
+            <h4 class="subheader">End user needs</h4>
             <p>
                 This project would be useful to a variety of interests. Among these are people living in flood-prone areas, looking to know when a flood is imminent in order to adequately prepare; this is where features like the alarm come
                 in handy. As well as this, there are those who would study the weather in a given area and would find records of the data I am storing useful to that end. In this case, the status bars will be invaluable, allowing the user
                 to see the state of the area with only a passing glance.
             </p>
-            <p>After several rounds of planning and redesigning, the flowchart for the embedded system looked like this:</p>
+            <br />
+            <p>After several rounds of planning and redesigning, the final flowchart for the embedded system looked like this:</p>
             <img class="flowchart" src="sreabhchárta.png" alt="flowchart!!" />
         </div>
         <hr />
@@ -79,6 +113,7 @@
             <p><b>Week 4.</b> I created the status bars, which would display the soil humidity and water level detected by the sensors.</p>
             <p><b>Week 5.</b> I tested the connection between micro:bit and computer, and added the alarm function.</p>
             <p><b>Week 6.</b> I made the flood simulation and corrected my erroneous assumptions regarding the sensors, which had thus far been causing problems.</p>
+            <p><b>Week 7.</b> I began work on the report, digitised the flowchart and consolidated all relevant files into one folder.</p>
             <h4 class="subheader">Testing</h4>
             <p>
                 I carried out testing on the embedded system, data collection system and model each separately before they were ready to be combined. I carried out unit testing as I went, testing the embedded system using the MakeCode
@@ -97,13 +132,23 @@
                 In an effort to fix this, I examined the wiring connections of the sensor until I noticed that the end connected to the micro:bit was larger than that of the other sensor. Experimentally, I reversed the connection so each
                 end of the wire was where the other one had been, and after doing this the sensor worked as expected, showing the proper value of 0 when not in water and without the vertical line that interfered with my readings.
             </p>
+            <h4 class="subheader">Model</h4>
+            <p>
+                The model that I implemented makes use of the data being collected as soon as it is sent over to the computer. The soil humidity and water level are both compared with simulated thresholds, representing how high these values
+                would have to get for them to be dangerous. This risk factor is stored alongside the collected data in the same .csv file.
+            </p>
+            <p>
+                When the situation is normal, the flood risk will be displayed as "None". When one variable reaches a dangerous level, however, it will instead be "Risk". If both are dangerously high, the system will assume a flood is
+                already happening, and the model will read that a flood is "In progress". If the flood simulation is running, however, the model will respond the flood risk as "Simulation", no matter how high the levels.
+            </p>
         </div>
         <hr />
         <div class="main-para text" id="evaluation">
             <h3 class="subheader">Evaluation</h3>
+            <p></p>
         </div>
         <hr />
-        <div class="main-para text">
+        <div class="main-para text" id="references">
             <h3 class="subheader">References & Word Count</h3>
             <table class="text word-count">
                 <tr>
@@ -135,6 +180,14 @@
                     <th id="total-words"></th>
                 </tr>
             </table>
+            <ul>
+                <li>
+                    <a href="https://makecode.microbit.org">Microsoft MakeCode for micro:bit</a>
+                </li>
+                <li>
+                    <a href="thonny.org">Thonny</a>
+                </li>
+            </ul>
         </div>
         <script src="script.js"></script>
     </body>
