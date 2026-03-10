@@ -118,3 +118,7 @@ tr th:nth-child(1) {
 tr {
     border-collapse: collapse;
 }
+
+.flowchart {
+    width: 100%;
+}

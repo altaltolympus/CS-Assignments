@@ -99,7 +99,7 @@ while True:
         
         if flood:
             serial.write_line("FLOOD!!")
-            serial.write_line("Sumlation iterations: " + floodIterations)
+            serial.write_line("Simulation iterations: " + floodIterations)
             serial.write_line("Simulated humidity: " + humid)
             serial.write_line("Simulated water level: " + water)
             incrementSim()
