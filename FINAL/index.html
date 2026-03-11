@@ -1,8 +1,6 @@
 <!doctype html>
-<html lang="en">
+<html lang="ga">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Tionscadal Deiridh Ríomheolaíochta</title>
         <link rel="stylesheet" href="style.css" />
     </head>
@@ -15,77 +13,83 @@
             <h3 class="subheader">Clár ábhair</h3>
             <ul>
                 <li>
-                    <div class="flex"><a href="#meeting-the-brief">Ag </a></div>
+                    <div class="flex"><a href="#meeting-the-brief">Ag comhlíonadh an coimre</a></div>
                 </li>
                 <li>
-                    <div class="flex"><a href="#investigation">Investigation</a></div>
+                    <div class="flex"><a href="#investigation">Imscrúdú</a></div>
                 </li>
                 <li>
-                    <div class="flex"><a href="#planning-and-design">Planning And Design</a></div>
+                    <div class="flex"><a href="#planning-and-design">Pleanáil agus Dearadh</a></div>
                 </li>
                 <li>
-                    <div class="flex"><a href="#creation">Creation</a></div>
+                    <div class="flex"><a href="#creation">Cruthú</a></div>
                 </li>
                 <li>
-                    <div class="flex"><a href="#evaluation">Evaluation</a></div>
+                    <div class="flex"><a href="#evaluation">Measúnú</a></div>
                 </li>
                 <li>
-                    <div class="flex"><a href="#references">References & Word Count</a></div>
+                    <div class="flex"><a href="#references">Tagairtí agus Líon na bhFocail</a></div>
                 </li>
             </ul>
         </div>
         <hr />
         <div class="main-para text" id="meeting-the-brief">
-            <h3 class="subheader">Meeting The Brief</h3>
-            <h4>BR1: Embedded System Design</h4>
-            <p>The embedded system I made is activated and deactivated by the press of a button, as well as taking analogue input from connected environmental sensors.</p>
-            <p>This data is then outputted to a USB-connected computer, as well as being displayed as bars on the micro:bit's screen. There is also audio output, and a blinking status light.</p>
-            <h4>BR2: Data collection</h4>
+            <h3 class="subheader">Ag Comhlíonadh and Coimre</h3>
+            <h4 class="subheader">BR1: Dearadh Córais Leabaithe</h4>
+            <p>Tá an córas leabaithe atá déanta agam curtha i ngíomh agus as gníomh trí bhrú chnaipe, chomh maith le hionchur analógach a thógáil ó bhraiteoirí atá nasctha leis.</p>
+            <p>Aschuirtear na sonraí sin go dtí ríomhaire atá ceangailte leis trí USB, chomh maith le bheith léirithe ar scáiléan an micro:bit. Tá aschur fuaime freisin, agus solas preabach stádais.</p>
+            <h4 class="subheader">BR2: Bailiú sonraí</h4>
             <p>
-                The system uses an environmental sensor to measure both soil humidity and water level. It then sends this data to a computer over USB connection making use of the <i>serial</i> python module, where it is stored in a .csv
-                file.
+                Baineann an córas úsáid as bhraiteoirí timpeallachta chun bogthasice ithreach agus léibhéal uisce a thomhais. Ansin, seolann sé na sonraí seo chuig ríomhaire thar cheangailt USB ag baint úsáid as an modúl python
+                <i>serial</i>, áit a stóráiltear é i gcomhad .csv.
             </p>
-            <h4>BR3: Process simulation</h4>
-            <p>I have implemented a function to test the operation of the system. This function, triggered by button press, simulates water level and soil humidity readings gradually becoming very high before falling back down again.</p>
-            <h4>Advanced Requirements:</h4>
-            <h5>Disaster risk modelling, "what-if" simulation and adaptation</h5>
+            <h4 class="subheader">BR3: Ionsamhlú próiséise</h4>
             <p>
-                The program running on the computer connected to the micro:bit contains a system which would assess the environmental data it recieved and determine the risk of flooding, whether there was little risk, high risk, or most
-                likely already a flood in progress.
+                Tá feidhm curtha isteach agam chun oibriú an chórais a chur chun triall. Déanann an feidhm seo, a spreagtar trí bhrú chnaipe, ionsamhlú de na léibhéal bogthaise ithreach agus léibhéal uisce ag dul in airde de réir a chéile
+                sula dtiteann siad go náid arís.
             </p>
-            <p>As well as this, I created a simulation to be run on the micro:bit which would imitate the sensors detecting humidity and water level increasing in tandem before receding again.</p>
-            <p>Finally, the system will, upon reading values from the sensor which are determined to be at dangerous levels by comparison to simulated thresholds, sound an alarm once.</p>
+            <h4 class="subheader">Ardriachtanais:</h4>
+            <h5>Samhaltú baoil tubaiste, ionsamhlúchán "mas rud é" agus oiriúiniúchán</h5>
+            <p>
+                Sa ríomhchlár atá á rith ar an ríomhaire atá nasctha leis an micro:bit, tá córas a dhéanann measúnú ar na sonraí a fhaigheann sé agus a oibríonn amach an baol tuile, más baol beag, baol ard, nó más dócha go bhfuil tuile ar
+                siúl cheana féin.
+            </p>
+            <p>
+                Chomh maith leis sin, chruthaigh mé ionsamhlú le rith ar an micro:bit a dhéanfadh aithris ar na braiteoirí ag braith léibhéal bogthaise ithreach agus léibhéal uisce ag dul in airde i ndiaidh a chéile, agus ansin ag crapadh
+                ar ais arís.
+            </p>
+            <p>Faoi dheireadh, tar éis luachanna a léamh ó na braiteoirí a chinntear go bhfuil siad tar éis léibhéal contúirteach a shroicheadh i comparáid le tairsigh ionsamhlaithe, déanfaidh an córas aláram a chur ag bualadh.</p>
         </div>
         <hr />
         <div class="main-para text" id="investigation">
-            <h3 class="subheader">Investigation</h3>
+            <h3 class="subheader">Imscrúdú</h3>
         </div>
         <hr />
         <div class="main-para text" id="planning-and-design">
-            <h3 class="subheader">Planning & Design</h3>
-            <h4 class="subheader">Project Options</h4>
-            <p>As I started this project, there were multiple directions I could have taken that would have satisfied the brief. However, I eventually chose the project that I did for a number of reasons.</p>
+            <h3 class="subheader">Pleanáil agus Dearadh</h3>
+            <h4 class="subheader">Roghanna Tionscadail</h4>
+            <p>Agus mé ag cur tús leis an tionscadal seo, bhí roghanna iomadúla agam de thionscadal féideartha a shásódh an choimre. Roghnaigh me an treo seo ar roinnt cúiseanna, áfach.</p>
             <p>
-                I could have made a wildfire early-warning system based on a temperature and atmospheric humidity sensor, a popular idea in my class; however, I felt it would be more appropriate to work with flooding, since floods vastly
-                outnumber wildfires in Ireland.
+                D'fhéadfadh liom córas rabhaithe falscaí bunaithe ar bhraiteoirí teochta agus bogthaise atmaisféaracha a dhéanamh; ba rogha coitianta é seo i mo rang, ach shíl mé go mbéadh sé níos oiriúnaí obair le tuilte, mar go bhfuil
+                tuilte i bhfad níos líonmhaire in Éireann ná mar atá falscaithe.
             </p>
             <p>
-                I could also have made an all-purpose weather modelling system, which would predict the weather based on an agglomeration of many different environmental inputs, but I deemed this to be too impractical and unreliable to test
-                under varied conditions.
+                Bhí mé in ann córas ilchumasach samhaltú aimsire a dhéanamh freisin, rud a dtuarfadh an aimsir bunaithe ar chruinneagán de a lán fachtóirí agus ionchuir éagsúla timpeallachta, ach mheas mé go mbeadh sé seo
+                róneamhphraiticiúil agus neamiontaofa chun tástáil a dhéanamh air faoi choinníolacha ilchineálach.
             </p>
             <p>
-                With all this in mind, I decided I would make the flood warning system and display the data from it in two bars on the micro:bit's screen (one for soil humidity and one for water level), which would extend from the left to
-                the right of the screen as the corresponding variables grew higher, and retract as these decreased.
+                Agus é seo ar fad ar intinn agam, chinn mé go ndéanfadh mé córas rabhaithe tuile, agus go léireodh mé na sonraí uaidh i ndá bharra ar scáileán an micro:bit (barra amháin do bhogtaise ithreach agus barra eile do léibhéal
+                uisce), a leathnódh ó chlé go deis an scáileáin de réir mar a ardódh na athróga comhfhreagrach, agus a dtarraingeodh siar de réir mar a ísleodh siad.
             </p>
-            <h4 class="subheader">Technologies And Software Used</h4>
+            <h4 class="subheader">Teicneolaíochtaí agus Bogearraí in Úsáid</h4>
             <p>
-                The sensors I decided to use, and therefore the variables I would be measuring, were water level and soil humidity. I chose these for a number of reasons. Firstly, these metrics strongly correlate with rainfall and other
-                things which cause flooding. Secondly, sensors for these values were easily available to me. Thirdly, it would be much more practical to test these under varied conditions than other sensors which could also have been used,
-                as the conditions these detect can easily be changed artificially.
+                Ba iad na braiteoirí a roghnaigh mé le húsáid, agus de bharr sin na luachanna a bheadh mé á dtomhas, braiteoirí bogthaise ithreach agus léibhéal uisce. Bhí cúiseanna agam dó seo: ar an gcéad dul síos, tá baint láidir ag na
+                luachanna seo le titim báistí agus toisceanna timpeallachta eile a chuireann le tuilte. Ar an dara dul síos, bhí braiteoirí do na hathróga seo ar fáil dom go héasca. Ar an tríú dul síos, beadh sé i bhfad níos praiticiúla na
+                braiteoirí seo a chur chun triall faoi choinníollacha éágsúla ná braiteoirí eile a d'fhéadfadh liom iad a úsáid freisin, mar gur féidir na toisceanna a thomhaiseann siad seo a ionramháil go héasca.
             </p>
             <p>
-                I did this as an alternative to relying on the micro:bit's inbuilt text display function, which I felt was not only too slow to provide information to keep up with the rate at which the environment changed, but would stop
-                everything else from running while it was working, including time-sensitive things like the alarm.
+                Roghnaigh mé chun na luachanna a bhailítear ó na braiteoirí a chur in iúil trí I did this as an alternative to relying on the micro:bit's inbuilt text display function, which I felt was not only too slow to provide
+                information to keep up with the rate at which the environment changed, but would stop everything else from running while it was working, including time-sensitive things like the alarm.
             </p>
             <p>
                 I then decided to store the data sent from the micro:bit into a .csv file, rather than an online database service such as ThingSpeak; firstly because I have more experience with using Python's <i>serial</i> module than with
