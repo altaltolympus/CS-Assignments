@@ -101,6 +101,7 @@ b {
     transform: translateX(-50%);
     position: relative;
     border-collapse: collapse;
+    background-color: #16161d70;
 }
 
 th {
