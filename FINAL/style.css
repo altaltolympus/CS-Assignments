@@ -3,9 +3,15 @@
     src: url(../consolas.ttf);
 }
 
+html {
+    background-color: #16161d;
+}
+
 body {
     margin: 0;
-    background-color: #16161d;
+    background: linear-gradient(transparent, MidnightBlue);
+    background-size: 200%;
+    padding-bottom: 5vmin;
 }
 
 .text {
@@ -159,4 +165,8 @@ li {
     margin: 7%;
     position: relative;
     padding-left: 1.6vmin;
+}
+
+small {
+    scale: 0.7;
 }
