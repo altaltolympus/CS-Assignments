@@ -175,3 +175,7 @@ small {
 a {
     color: #ddd;
 }
+
+video {
+    width: 100%;
+}
