@@ -93,7 +93,7 @@ b {
     text-decoration: underline;
 }
 
-.word-count {
+table {
     border-style: solid;
     border-color: #ddd;
     font-size: 2.5vmin;
@@ -136,7 +136,7 @@ tr {
     transition: 100ms ease-in;
     background: linear-gradient(90deg, hsl(0, 70%, 80%), hsl(60, 70%, 80%), hsl(120, 70%, 80%), hsl(180, 70%, 80%), hsl(240, 70%, 80%), hsl(300, 70%, 80%), hsl(360, 70%, 80%));
     background-clip: text;
-    position: absolute;
+    /* position: absolute; */
     word-wrap: nowrap;
     /* margin: 10%; */
 }
@@ -148,14 +148,14 @@ tr {
     color: #eeeeee00;
     text-decoration: underline;
     /* font-size: 2.6vmin; */
-    vertical-align: middle;
+    /* vertical-align: middle; */
     /* transform: translateY(50%); */
 }
 
 .flex {
     display: flex;
     align-items: center;
-    position: absolute;
+    /* position: absolute; */
     /* width: max-content; */
     width: 100%;
     height: 100%;
@@ -166,6 +166,7 @@ li {
     margin: 7%;
     position: relative;
     padding-left: 1.6vmin;
+    /* height: max-content; */
 }
 
 small {
@@ -174,4 +175,8 @@ small {
 
 a {
     color: #ddd;
+}
+
+video {
+    width: 100%;
 }
